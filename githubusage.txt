@@ -1,0 +1,23 @@
+登录github账号，新建仓库，复制仓库的地址[git@github.com:WhiteCata/tech.git--栗子]；
+
+在桌面空白处右键，点击使用git bash here，切换到指定盘符下；
+
+git clone [git@github.com:WhiteCata/tech.git--栗子];
+
+然后，把自己需要上传的文件夹中的文件复制到  克隆下载下来的文件夹里边。
+cd切换到新文件夹里边；
+git add .；
+git commit -m "提示信息"；
+git push -u origin master.
+
+上传完毕，有可能需要验证密码。
+
+
+
+
+更新数据！！！
+
+在git bash中，切换到文件夹下；git add (更新的文件以及后缀名)；
+git commit -m "提示信息";
+git push -u origin master.
+更新完毕！！！

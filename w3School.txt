@@ -1,4 +1,17 @@
+W3School中文版
 https://www.w3cschool.cn/css/css-center2.html
 
 三角形生成器
 http://apps.eky.hk/css-triangle-generator/zh-hant
+
+
+html中引入其他html文件
+https://blog.csdn.net/arvin0/article/details/56839242
+
+H5之家
+http://www.jq22.com/webqd1105
+
+淘宝安装 cnpm
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+

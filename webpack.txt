@@ -38,7 +38,7 @@ require("./*.css");
 require("./*.scss");
 
 
-
-
+学习webpack 的网站
+https://www.webpackjs.com/configuration/
 
 webpack  gulp 都是基于node环境运行！

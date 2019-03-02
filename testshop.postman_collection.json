@@ -1,0 +1,458 @@
+{
+	"info": {
+		"_postman_id": "a5e8dd7c-d083-460f-b6e1-57b0f787ebe0",
+		"name": "testshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "商品信息",
+			"item": [
+				{
+					"name": "一级分类",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.104.244.134:8080/goodstypelist.do?callback=jsonp&l=1",
+							"protocol": "http",
+							"host": [
+								"47",
+								"104",
+								"244",
+								"134"
+							],
+							"port": "8080",
+							"path": [
+								"goodstypelist.do"
+							],
+							"query": [
+								{
+									"key": "callback",
+									"value": "jsonp"
+								},
+								{
+									"key": "l",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "二级分类",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.104.244.134:8080/goodstypelist.do?callback=jsonp&l=2",
+							"protocol": "http",
+							"host": [
+								"47",
+								"104",
+								"244",
+								"134"
+							],
+							"port": "8080",
+							"path": [
+								"goodstypelist.do"
+							],
+							"query": [
+								{
+									"key": "callback",
+									"value": "jsonp"
+								},
+								{
+									"key": "l",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "商品列表",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.104.244.134:8080/goodsbytid.do?callback=jsonp&tid=13&page=1&limit=20",
+							"protocol": "http",
+							"host": [
+								"47",
+								"104",
+								"244",
+								"134"
+							],
+							"port": "8080",
+							"path": [
+								"goodsbytid.do"
+							],
+							"query": [
+								{
+									"key": "callback",
+									"value": "jsonp"
+								},
+								{
+									"key": "tid",
+									"value": "13"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "商品详情",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.104.244.134:8080/goodsbyid.do?id=4",
+							"protocol": "http",
+							"host": [
+								"47",
+								"104",
+								"244",
+								"134"
+							],
+							"port": "8080",
+							"path": [
+								"goodsbyid.do"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "用户",
+			"item": [
+				{
+					"name": "查询用户",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.104.244.134:8080/username.do?username=aaa_xjg",
+							"protocol": "http",
+							"host": [
+								"47",
+								"104",
+								"244",
+								"134"
+							],
+							"port": "8080",
+							"path": [
+								"username.do"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "aaa_xjg"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询邮箱",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.104.244.134:8080/useremail.do?email=aaa_xjg@163.com",
+							"protocol": "http",
+							"host": [
+								"47",
+								"104",
+								"244",
+								"134"
+							],
+							"port": "8080",
+							"path": [
+								"useremail.do"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "aaa_xjg@163.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "用户注册",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.104.244.134:8080/usersave.do?username=wong_wong&password=123456&email=nicai@lalala.com&sex=男",
+							"protocol": "http",
+							"host": [
+								"47",
+								"104",
+								"244",
+								"134"
+							],
+							"port": "8080",
+							"path": [
+								"usersave.do"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "wong_wong"
+								},
+								{
+									"key": "password",
+									"value": "123456"
+								},
+								{
+									"key": "email",
+									"value": "nicai@lalala.com"
+								},
+								{
+									"key": "sex",
+									"value": "男"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "用户登录",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.104.244.134:8080/userlogin.do?name=aaa_xjg&password=111",
+							"protocol": "http",
+							"host": [
+								"47",
+								"104",
+								"244",
+								"134"
+							],
+							"port": "8080",
+							"path": [
+								"userlogin.do"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "aaa_xjg"
+								},
+								{
+									"key": "password",
+									"value": "111"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "购物车",
+			"item": [
+				{
+					"name": "添加商品",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.104.244.134:8080/cartsave.do?gid=4&token=3690",
+							"protocol": "http",
+							"host": [
+								"47",
+								"104",
+								"244",
+								"134"
+							],
+							"port": "8080",
+							"path": [
+								"cartsave.do"
+							],
+							"query": [
+								{
+									"key": "gid",
+									"value": "4"
+								},
+								{
+									"key": "token",
+									"value": "3690"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "购物车列表",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.104.244.134:8080/cartlist.do?token=3690",
+							"protocol": "http",
+							"host": [
+								"47",
+								"104",
+								"244",
+								"134"
+							],
+							"port": "8080",
+							"path": [
+								"cartlist.do"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "3690"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "修改购物车",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://47.104.244.134:8080/cartupdate.do?token=3690&id=2390&gid=4&num=-1",
+							"protocol": "http",
+							"host": [
+								"47",
+								"104",
+								"244",
+								"134"
+							],
+							"port": "8080",
+							"path": [
+								"cartupdate.do"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "3690"
+								},
+								{
+									"key": "id",
+									"value": "2390"
+								},
+								{
+									"key": "gid",
+									"value": "4"
+								},
+								{
+									"key": "num",
+									"value": "-1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "56ca350a-e92a-46ff-acef-ec2fca4c70e6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "480ec72e-1d76-4330-9f43-597af6d1c70c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "11ea7952-c336-4b5f-bdd4-993dd360a9f0",
+			"key": "url",
+			"value": "http://47.104.244.134:8080/",
+			"type": "string"
+		}
+	]
+}
